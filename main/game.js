@@ -1,7 +1,4 @@
-import { camera } from "./display.js";
 import { key } from "./input.js"
-
-camera.rotation.order = "YXZ"
 
 let player = {
   x: 0,
@@ -53,8 +50,4 @@ export function gameMain() {
 
   player.y += player.powY;
 
-  // ===== カメラ反映 =====
-  camera.position.set(player.x, player.y, player.z);
-  camera.rotation.y = player.yaw;
-  camera.rotation.x = player.pitch;
 }

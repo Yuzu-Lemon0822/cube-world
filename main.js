@@ -1,6 +1,18 @@
 // main.js
-import { initDisplay, addChunkMesh, renderDisplay } from "./main/display.js";
+import { initDisplay, addChunkMesh, renderDisplay, camera } from "./main/display.js";
 import { generateChunk } from "./main/data.js";
+import { gameMain } from './game.js';
+
+function tick() {
+    gameMain(player, key);
+
+    camera.position.set(player.x, player.y, player.z);
+    camera.rotation.set(player.pitch, player.yaw, 0);
+
+    renderDisplay();
+    requestAnimationFrame(tick);
+}
+tick();
 
 const canvas = document.querySelector("#canvas");
 initDisplay(canvas);
@@ -12,21 +24,11 @@ addChunkMesh(chunk);
 alert("added")
 renderDisplay()
 alert("displayed")
-/*
-try {
-  import { gameMain } from "./main/game.js";
-} catch(e) {
-  alert(e)
-}
-// アニメーションループ
-function animate() {
-  requestAnimationFrame(animate);
 
-  gameMain()
-  renderDisplay();
+function animate() {
+  tick()
   alert("success")
 }
 
 animate();
 
-*/
