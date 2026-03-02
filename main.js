@@ -1,8 +1,17 @@
 import { initDisplay, renderDisplay } from "./main/display.js";
+import { generateChunk } from "./main/data.js";
 
 const canvas = document.querySelector("#canvas");
 initDisplay(canvas);
 renderDisplay();
+
+let chunk;
+try {
+  chunk = generateChunk(0,0,0);
+  alert("chunk generated: vertices=" + chunk.vertices.length);
+} catch(e) {
+  alert("chunk error: " + e);
+}
 
 /*
 
