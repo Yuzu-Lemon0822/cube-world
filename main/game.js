@@ -3,7 +3,7 @@ import { key } from "./input.js"
 
 camera.rotation.order = "YXZ"
 
-const player = {
+let player = {
   x: 0,
   y: 0,
   z: 5,
@@ -22,7 +22,7 @@ const player = {
 
 const pitchLimit = Math.PI / 2 - 0.01
 
-export function main() {
+export function gameMain() {
 
   // ===== 移動入力 =====
   if (key["KeyW"]) player.powZ -= player.speed;
