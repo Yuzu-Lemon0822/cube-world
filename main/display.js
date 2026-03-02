@@ -1,7 +1,7 @@
 // main/display.js
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js";
 
-export let camera;
+let camera;
 let scene, renderer;
 let meshGroup;
 
@@ -51,8 +51,4 @@ export function addChunkMesh(chunk) {
 
 export function renderDisplay() {
   renderer.render(scene, camera);
-}
-
-export function getCamera() {
-  return camera;
 }

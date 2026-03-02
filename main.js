@@ -3,6 +3,9 @@ import { initDisplay, addChunkMesh, renderDisplay, camera } from "./main/display
 import { generateChunk } from "./main/data.js";
 import { gameMain } from './game.js';
 
+const canvas = document.querySelector("#canvas");
+initDisplay(canvas);
+
 function tick() {
     gameMain(player, key);
 
@@ -12,10 +15,6 @@ function tick() {
     renderDisplay();
     requestAnimationFrame(tick);
 }
-tick();
-
-const canvas = document.querySelector("#canvas");
-initDisplay(canvas);
 
 // とりあえず原点付近の1チャンクを作る
 const chunk = generateChunk(0, 0, 0);
