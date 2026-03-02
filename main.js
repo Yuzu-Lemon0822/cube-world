@@ -13,22 +13,15 @@ const canvas = document.querySelector("#canvas");
 initDisplay(canvas);
 
 // とりあえず原点付近の1チャンクを作る
-try {
-  const chunk = generateChunk(0, 0, 0);
-  addChunkMesh(chunk);
-} catch(e) {
-  alert("generate error: "+e)
-}
+const chunk = generateChunk(0, 0, 0);
+addChunkMesh(chunk);
 // アニメーションループ
 function animate() {
-  try {
-    requestAnimationFrame(animate);
+  requestAnimationFrame(animate);
 
-    main()
-    renderDisplay();
-  } catch(e) {
-    alert("loop error: "+e)
-  }
+  main()
+  renderDisplay();
+  alert("success")
 }
 
 animate();
