@@ -13,8 +13,6 @@ addChunkMesh(chunk);
 alert("added")
 renderDisplay()
 alert("displayed")
-
-/*
 // アニメーションループ
 function animate() {
   requestAnimationFrame(animate);
@@ -25,4 +23,3 @@ function animate() {
 }
 
 animate();
-*/
