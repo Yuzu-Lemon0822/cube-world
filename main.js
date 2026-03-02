@@ -11,7 +11,7 @@ const chunk = generateChunk(0, 0, 0);
 alert("generated")
 addChunkMesh(chunk);
 alert("added")
-rendeerDisplay()
+renderDisplay()
 alert("displayed")
 
 /*
