@@ -1,7 +1,8 @@
 // main/display.js
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js";
 
-let scene, camera, renderer;
+export let camera;
+let scene, renderer;
 let meshGroup;
 
 export function initDisplay(canvas) {

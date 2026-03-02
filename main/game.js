@@ -1,4 +1,4 @@
-import { camera } from "./display.js"
+import { camera } from "./display.js";
 import { key } from "./input.js"
 
 camera.rotation.order = "YXZ"
