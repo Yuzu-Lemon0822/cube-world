@@ -1,7 +1,7 @@
 // main.js
 import { initDisplay, addChunkMesh, renderDisplay } from "./main/display.js";
 import { generateChunk } from "./main/data.js";
-import { main } from "./main/game.js"
+import { gameMain } from "./main/game.js"
 
 const canvas = document.querySelector("#canvas");
 initDisplay(canvas);
@@ -17,7 +17,7 @@ alert("displayed")
 function animate() {
   requestAnimationFrame(animate);
 
-  main()
+  gameMain()
   renderDisplay();
   alert("success")
 }
