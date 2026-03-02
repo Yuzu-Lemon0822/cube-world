@@ -1,3 +1,11 @@
+import { initDisplay, renderDisplay } from "./main/display.js";
+
+const canvas = document.querySelector("#canvas");
+initDisplay(canvas);
+renderDisplay();
+
+/*
+
 // main.js
 import { initDisplay, addChunkMesh, renderDisplay } from "./main/display.js";
 import { generateChunk, CHUNK_SIZE } from "./main/data.js";
@@ -19,3 +27,5 @@ function animate() {
 }
 
 animate();
+
+*/
