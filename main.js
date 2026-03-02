@@ -12,6 +12,7 @@ addChunkMesh(chunk);
 alert("added")
 renderDisplay()
 alert("displayed")
+/*
 try {
   import { gameMain } from "./main/game.js";
 } catch(e) {
@@ -27,3 +28,5 @@ function animate() {
 }
 
 animate();
+
+*/
