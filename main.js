@@ -13,7 +13,7 @@ alert("added")
 renderDisplay()
 alert("displayed")
 try {
-  import { gameMain } from "./main/game.js"
+  import { gameMain } from "./main/game.js";
 } catch(e) {
   alert(e)
 }
