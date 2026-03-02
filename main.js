@@ -8,11 +8,11 @@ initDisplay(canvas);
 
 // とりあえず原点付近の1チャンクを作る
 const chunk = generateChunk(0, 0, 0);
-alert(generated)
+alert("generated")
 addChunkMesh(chunk);
-alert(added)
+alert("added")
 rendeerDisplay()
-alert(displayed)
+alert("displayed")
 
 /*
 // アニメーションループ
