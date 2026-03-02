@@ -1,3 +1,9 @@
+(function(){
+  window.onerror = function(msg, url, line, col, error){
+    alert("JS error:\n"+msg+"\nLine:"+line);
+  };
+})();
+
 // main.js
 import { initDisplay, addChunkMesh, renderDisplay } from "./main/display.js";
 import { generateChunk, CHUNK_SIZE } from "./main/data.js";
